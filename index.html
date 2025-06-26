@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Voki Company</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; 
+      padding: 0 0 70px; /* Отступ для футера */
+      background-color: #f5f5f5;
+      color: #333;
+      position: relative;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin: 0;
+    }
+    nav {
+      background: #356ab9;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding: 12px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: white;
+      margin-bottom: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #4a90e2;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+    h3 {
+      text-align: center;
+      color: #356ab9;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      width: 95%;
+      position: absolute;
+      bottom: 0;
+      font-size: 0.9rem;
+    }
+    .button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+    }
+    .button:hover {
+      background-color: #218838;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .crypto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .denomination {
+      background: #eef5ff;
+      padding: 12px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .note {
+      background: #e6f7ff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Voki Company</h1>
+  </header>
+  
+  <nav>
+    <a href="#about">О компании</a>
+    <a href="#services">Услуги</a>
+    <a href="#buy-VT">Купить VT</a>
+    <a href="#crypto">Про VT</a>
+    <a href="#market">Маркет</a>
+  </nav>
+  
+  <div class="container">
+    <section id="about">
+      <h2>О компании</h2>
+      <p>Voki Company — современная компания, специализирующаяся на инновационных решениях в области IT и цифровых технологий. Мы предлагаем качественные услуги по разработке программного обеспечения, созданию веб-сайтов и поддержке цифровой инфраструктуры. Также мы занимаемся созданием устройств. У нас есть канал "Ракосель" и мы создали свою криптовалюту.</p>
+    </section>
+    
+    <section id="crypto">
+      <h2>О криптовалюте</h2>
+      <p>Наша криптовалюта VokiToken (VT) была создана 30.05.2025 на популярной бирже <a href="https://t.me/blum/app">Blum</a>. Она используется для основной оплаты на нашем сайте. Особенность нашей криптовалюты - наличие реальных банкнот и монет. Мы их делаем как на заказ. Сначала покупатель пишет про то что он хочет купить вокитокен. Потом он нам переводит деньги и мы считаем сколько он нам отправил и сколько он за все эти деньги может купить криптовалют. Дальше мы на банкноте пишем сколько он за эти деньги купил криптовалют и отправяем ему.</p>
+    </section>
+    
+    <section id="services">
+      <h2>Услуги</h2>
+      <p>Наши ключевые направления:</p>
+      <ul>
+        <li>Разработка кастомных веб и мобильных приложений</li>
+        <li>Дизайн и UX/UI проектирование</li>
+        <li>Поддержка и сопровождение IT-систем</li>
+        <li>Консалтинг и внедрение цифровых решений</li>
+        <li>Создание простых операционных систем</li>
+        <li>Работа с искусственным интеллектом</li>
+      </ul>
+      <a href="https://t.me/VokiCompanySvyazBot" class="button">Обратная связь</a>
+    </section>
+    
+    <section id="market">
+      <h2>Маркет</h2>
+      <p>В нашем <a href="https://t.me/VokiMarketBot">маркете</a> вы можете приобрести технику, программы и ОС. Основной способ оплаты - VokiToken.</p>
+    </section>
+    <section id="buy-VT">
+        <p>Купить VokiToken можно <a href="https://t.me/blum/app?startapp=memepadjetton_VT_ceNrH-ref_OvadS4OvlT">вот здесь</a>.</p>
+    </section>
+  </div>
+  
+  <footer>
+    &copy; 2025 Voki Company. Все права защищены.
+             Телефон: +7 (904) 698-71-98
+  </footer>
+</body>
+  </html>
